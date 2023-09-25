@@ -22,10 +22,26 @@ handleClick = () => {
     return (
       <div className={css.NavBar}>
         <h1>My Gellery</h1>
-        <button isLoggedIn={this.state.isLoggedIn}>LogIn</button>
+        {this.state.isLoggedIn ? (
+          <button isLoggedIn={this.handleClick}>LogIn</button>
+        ) : (
+        <form>
+          <label>
+            Username:
+            <input type="text" />
+          </label>
+          <br />
+          <label>
+            Password:
+            <input type="password" />
+          </label>
+          <br />
+          <button onClick={this.handleClick}>Submit</button>
+        </form>
+        )}
       </div>
-    )
+    );
   }
 }
 
-export default NavBarForm
+export default NavBarForm;

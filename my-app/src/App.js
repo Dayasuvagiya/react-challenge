@@ -3,8 +3,8 @@ import css from './App.module.css';
 // import Sidebar from "./components/Sidebar";
 // import NavBarForm from "./components/NavBarForm";
 // import LifeCyclesCDM from './components/LifeCyclesCDM';
-import LifeCyclesCDU from './components/LifeCyclesCDU';
-
+// import LifeCyclesCDU from './components/LifeCyclesCDU';
+import LifeCyclesCWU from './components/LifeCyclesCWU';
 
 function App() {
   return (
@@ -13,9 +13,9 @@ function App() {
      {/* <Sidebar />
       <NavBarForm /> 
       <RenderingLists /> 
-      <LifeCyclesCDM /> */}
-
-      <LifeCyclesCDU />
+      <LifeCyclesCDM /> 
+      <LifeCyclesCDU /> */}
+      <LifeCyclesCWU />
       
     </div>
   );

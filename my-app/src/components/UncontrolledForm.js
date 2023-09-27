@@ -1,32 +1,11 @@
 import React, { Component } from "react";
 
-export class ControlledForm extends Component {
+export class UncontrolledForm extends Component {
   constructor(props) {
     super(props);
-
-    this.state = {
-      name: "",
-      category : 'website',
-      comments: ''
-    };
-  }
-
-  handleNameChange = (event) => {
-    this.setState({
-      name: event.target.value
-    });
-  };
-
-  handleCategoryChange = (event) => {
-    this.setState({
-      category: event.target.value
-    })
-  }
-
-  handleCommentsChange = (event) => {
-    this.setState({
-      comments: event.target.value
-    })
+    this.inputName = React.createRef();
+    this.selectCategory = React.createRef();
+    this.comments = React.createRef();
   }
 
   handleSubmit = (event) =>{
@@ -41,11 +20,10 @@ export class ControlledForm extends Component {
             <div>
               <label htmlFor="id-name">Your Name:</label>
               <input
-                value={this.state.name}
-                onChange={this.handleNameChange}
                 id="id-name"
                 name="name"
                 type="text"
+                ref={this.inputName}
               />
             </div>
             <div>
@@ -53,8 +31,7 @@ export class ControlledForm extends Component {
               <select 
                 id="id-category" 
                 name="category"
-                value={this.state.category}
-                onChange={this.handleCategoryChange}
+                ref={this.selectCategory}
               >
                 <option value="website">Website issue</option>
                 <option value="order">Order issue</option>
@@ -67,8 +44,7 @@ export class ControlledForm extends Component {
                 <textarea 
                   id="id-comment" 
                   name="comments"
-                  value={this.state.comments}
-                  onChange={this.handleCommentsChange}
+                  ref={this.comments}
                 />
             </div>
             <input 
@@ -81,4 +57,4 @@ export class ControlledForm extends Component {
   }
 }
 
-export default ControlledForm;
+export default UncontrolledForm;

@@ -7,7 +7,8 @@ import css from './App.module.css';
 // import LifeCyclesCWU from './components/LifeCyclesCWU';
 // import ControlledForm from './components/ControlledForm';
 // import UncontrolledForm from './components/UncontrolledForm';
-import SearchBar1 from './components/SearchBar1';
+// import SearchBar1 from './components/SearchBar1';
+import ControlledFormHooks from './components/ControlledFormHooks';
 
 function App() {
   return (
@@ -20,8 +21,9 @@ function App() {
       <LifeCyclesCDU /> 
       <LifeCyclesCWU /> 
       <ControlledForm />
-      <UncontrolledForm />*/}
-      <SearchBar1 />
+      <UncontrolledForm />
+      <SearchBar1 />*/}
+      <ControlledFormHooks />
       
     </div>
   );

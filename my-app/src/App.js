@@ -9,7 +9,8 @@ import css from './App.module.css';
 // import UncontrolledForm from './components/UncontrolledForm';
 // import SearchBar1 from './components/SearchBar1';
 // import ControlledFormHooks from './components/ControlledFormHooks';
-import UseStateWithArrays from './components/UseStateWithArrays';
+// import UseStateWithArrays from './components/UseStateWithArrays';
+import UseStateWithObjects from "./components/UseStateWithObjects";
 
 function App() {
   return (
@@ -24,9 +25,9 @@ function App() {
       <ControlledForm />
       <UncontrolledForm />
       <SearchBar1 />
-      <ControlledFormHooks />*/}
-      <UseStateWithArrays />
-      
+      <ControlledFormHooks />
+      <UseStateWithArrays />*/}
+      <UseStateWithObjects />
     </div>
   );
 }

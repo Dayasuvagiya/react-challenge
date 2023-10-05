@@ -10,7 +10,8 @@ import css from './App.module.css';
 // import SearchBar1 from './components/SearchBar1';
 // import ControlledFormHooks from './components/ControlledFormHooks';
 // import UseStateWithArrays from './components/UseStateWithArrays';
-import UseStateWithObjects from "./components/UseStateWithObjects";
+// import UseStateWithObjects from "./components/UseStateWithObjects";
+import UseEffectCounter from './components/UseEffectCounter';
 
 function App() {
   return (
@@ -26,8 +27,9 @@ function App() {
       <UncontrolledForm />
       <SearchBar1 />
       <ControlledFormHooks />
-      <UseStateWithArrays />*/}
-      <UseStateWithObjects />
+      <UseStateWithArrays />
+      <UseStateWithObjects />*/}
+      <UseEffectCounter />
     </div>
   );
 }

@@ -12,7 +12,8 @@ import css from './App.module.css';
 // import UseStateWithArrays from './components/UseStateWithArrays';
 // import UseStateWithObjects from "./components/UseStateWithObjects";
 // import UseEffectCounter from './components/UseEffectCounter';
-import UseEffectCounterContainer from './components/UseEffectCounterContainer';
+// import UseEffectCounterContainer from './components/UseEffectCounterContainer';
+import HTTPRequests from './components/HTTPRequests';
 
 function App() {
   return (
@@ -30,8 +31,9 @@ function App() {
       <ControlledFormHooks />
       <UseStateWithArrays />
       <UseStateWithObjects />
-      <UseEffectCounter />*/}
-      <UseEffectCounterContainer />
+      <UseEffectCounter />
+      <UseEffectCounterContainer />*/}
+      <HTTPRequests />
     </div>
   );
 }
